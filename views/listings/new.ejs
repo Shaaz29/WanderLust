@@ -3,7 +3,7 @@
     <div class="col-8 offset-2">
 
     <h3>Create a New Listing</h3>
-    <form method="POST"  action="/listings" class="needs-validation" novalidate>
+    <form method="POST"  action="/listings" class="needs-validation" novalidate enctype="multipart/form-data">
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
             <input id="title"
@@ -24,13 +24,33 @@
 
         </div>
         <div class="mb-3">
-            <label for="image" class="form-label">Image Link</label>
+            <label for="image" class="form-label">Upload Listing Image</label>
             <input id="image"
-            name = "listing[image][url]" 
-            placeholder="enter image URL/Link" 
-            type="text" 
-            class="form-control"/>
+            name = "listing[image]" 
+            type="file" 
+            class="form-control"
+            required/>
         </div>
+
+        <!-- Category -->
+       <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select name="listing[category]" id="category" class="form-select" required>
+                <option value="">Select a category</option>
+                <option value="Trending">Trending</option>
+                <option value="Rooms">Rooms</option>
+                <option value="Iconic Cities">Iconic Cities</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Castles">Castles</option>
+                <option value="Amazing Pools">Amazing Pools</option>
+                <option value="Camping">Camping</option>
+                <option value="Farms">Farms</option>
+                <option value="Arctic">Arctic</option>
+                <option value="Domes">Domes</option>
+                <option value="Boats">Boats</option>
+            </select>
+        </div>
+        
         <div class="row">
             <div class="mb-3 col-md-4">
             <label for="price" class="form-label">Price</label>

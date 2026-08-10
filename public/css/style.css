@@ -63,7 +63,7 @@ body{
 
 /* Cards */
 
-.card{
+.listing-card{
     border: none !important;
     margin-bottom: 2rem;
 }
@@ -123,4 +123,72 @@ body{
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
+
+/* Filters */
+
+#filters {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.filter {
+    text-decoration: none;
+    color: #717171;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.filter p {
+    color: #717171;
+    text-decoration: none;
+    margin: 0.4rem 0 0;
+}
+
+.filter i {
+    font-size: 1.3rem;
+}
+
+.filter:hover {
+    color: #222;
+}
+
+.filter:hover p {
+    color: #222;
+}
+
+/* Remove link styling completely */
+.filter:visited {
+    color: #717171;
+}
+
+.filter:active {
+    color: #222;
+}
+
+/* Tax switch */
+
+.tax-toggle {
+    margin-left: auto;
+    flex-shrink: 0;
+    border: 1px solid #222;
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    white-space: nowrap;
+}
+
+.tax-info {
+    display: none;
 }
