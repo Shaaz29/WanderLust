@@ -196,6 +196,7 @@
 
                         </div>
 
+                        <% if (currUser && currUser._id.equals(review.author._id)) { %>
                         <form
                             class="mb-3"
                             method="POST"
@@ -205,7 +206,7 @@
                                 Delete
                             </button>
                         </form>
-
+                        <% } %>
                     </div>
 
                 <% } %>
