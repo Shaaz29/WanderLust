@@ -43,6 +43,9 @@ A full-stack accommodation and travel listing web application inspired by Airbnb
 ### 🏡 Listing Details
 ![Listing Details](./screenshots/listingdetails.png)
 
+### 🗺️ Map Location
+![Map Location](./screenshots/maplocation.png)
+
 ### ⭐ Reviews
 ![Reviews](./screenshots/reviews.png)
 
