@@ -1,4 +1,86 @@
+<style>
+  .profile-btn {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: white;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #222;
+}
 
+.profile-btn:hover {
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
+
+.profile-btn .fa-user {
+    font-size: 1rem;
+}
+
+.profile-btn .fa-bars {
+    font-size: 1rem;
+}
+
+.profile-menu {
+    min-width: 230px;
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+    padding: 0.7rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info strong {
+    font-size: 0.95rem;
+}
+
+.profile-info small {
+    color: #717171;
+    margin-top: 0.2rem;
+}
+
+.profile-menu .dropdown-item {
+    padding: 0.6rem 1rem;
+}
+
+.profile-menu .dropdown-item i {
+    margin-right: 0.5rem;
+}
+/* Mobile profile button */
+@media (max-width: 991px) {
+    .profile-btn {
+        width: fit-content;
+        padding: 0.45rem 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    .profile-menu {
+        min-width: 210px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-btn {
+        padding: 0.4rem 0.6rem;
+        gap: 0.4rem;
+    }
+
+    .profile-btn .fa-user,
+    .profile-btn .fa-bars {
+        font-size: 0.9rem;
+    }
+
+    .profile-menu {
+        min-width: 190px;
+    }
+}
+</style>
 <nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
@@ -35,8 +117,37 @@
           <a class="nav-link" href="/login"><b>Log in</b></a>
         <% } %>
         <% if(currUser){ %>
-        <a class="nav-link" href="/logout"><b>Log out</b></a>
-        <% } %>
+
+  <div class="dropdown">
+    <button
+      class="btn profile-btn dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <i class="fa-regular fa-user"></i>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="dropdown-menu dropdown-menu-end profile-menu">
+
+      <li class="profile-info">
+        <strong><%= currUser.username %></strong>
+        <small><%= currUser.email %></small>
+      </li>
+
+      <li><hr class="dropdown-divider"></li>
+
+      <li>
+        <a class="dropdown-item" href="/logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          Log out
+        </a>
+      </li>
+
+    </ul>
+  </div>
+<% } %>
       </div>
     </div>
   </div>
