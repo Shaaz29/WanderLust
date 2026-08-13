@@ -764,6 +764,135 @@ const sampleListings = [
     country: "India",
     category: "Domes"
 },
+{
+    title: "Luxury Beachfront Villa",
+    description:
+        "Enjoy a peaceful stay in this beautiful beachfront villa with stunning ocean views and easy access to the beach.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2800,
+    location: "Goa",
+    country: "India",
+},
+
+{
+    title: "Cozy Mountain Cabin",
+    description:
+        "A warm and peaceful mountain cabin surrounded by nature, perfect for a relaxing escape from the city.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1400,
+    location: "Manali",
+    country: "India",
+},
+
+{
+    title: "Modern City Apartment",
+    description:
+        "Stay in a stylish modern apartment located close to the city's popular attractions, restaurants, and shopping areas.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1800,
+    location: "Dubai",
+    country: "United Arab Emirates",
+},
+
+{
+    title: "Seaside Cottage Retreat",
+    description:
+        "Relax in this charming seaside cottage offering beautiful views, comfortable rooms, and a peaceful atmosphere.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1600,
+    location: "Alibaug",
+    country: "India",
+},
+
+{
+    title: "Elegant Apartment in Paris",
+    description:
+        "Experience Paris from this elegant apartment located in a convenient neighborhood near major attractions.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2200,
+    location: "Paris",
+    country: "France",
+},
+
+{
+    title: "Luxury Villa in Santorini",
+    description:
+        "Enjoy spectacular sea views and a relaxing atmosphere in this beautiful luxury villa overlooking Santorini.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 3200,
+    location: "Santorini",
+    country: "Greece",
+},
+
+{
+    title: "Forest Cabin Retreat",
+    description:
+        "Escape into nature with this cozy forest cabin surrounded by trees and peaceful hiking trails.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1100,
+    location: "Rishikesh",
+    country: "India",
+},
+
+{
+    title: "Historic Home in Rome",
+    description:
+        "Stay in a charming historic home and explore the beautiful streets, architecture, and culture of Rome.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1900,
+    location: "Rome",
+    country: "Italy",
+},
+
+{
+    title: "Tropical Beach Villa",
+    description:
+        "Enjoy a tropical getaway in this comfortable villa located near beautiful beaches and crystal-clear waters.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2500,
+    location: "Phuket",
+    country: "Thailand",
+},
+
+{
+    title: "Modern Loft in London",
+    description:
+        "A stylish urban loft offering a comfortable stay in the heart of London, perfect for exploring the city.",
+    image: {
+        filename: "listingimage",
+        url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2100,
+    location: "London",
+    country: "United Kingdom",
+},
 ];
 
 module.exports = { data: sampleListings };
